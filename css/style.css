@@ -8,6 +8,13 @@
     border: 0px solid transparent;
 }
 
+body {
+    font-family: "Alegreya", serif;
+    font-optical-sizing: auto;
+    /* font-weight: <weight>;
+    font-style: normal; */
+}
+
 img {
     width: 100%;
     height: auto;
@@ -24,8 +31,39 @@ a {
 }
 
 .container {
-    width: 85%;
+    width: 90%;
     margin-inline: auto;
 }
 
-/* ========================================================= */
+/* ================= Navbar ================= */
+.navbar {
+    padding: 0.313rem;
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999999;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .container .logo {
+    /* width: 11.25rem; */
+    width: 15%;
+}
+
+.navbar .container .links {
+    width: 60%;
+}
+
+.navbar .container .links ul {
+    display: flex;
+    justify-content: flex-end;
+    gap: 2.5rem;
+    font-size: 1.375rem;
+}
