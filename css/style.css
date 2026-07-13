@@ -8,6 +8,10 @@
     border: 0px solid transparent;
 }
 
+*::selection {
+    background-color: #8E7754;
+}
+
 body {
     font-family: "Alegreya", serif;
     font-optical-sizing: auto;
@@ -70,6 +74,11 @@ a {
 
 .navbar .container .links ul li a {
     color: white;
+    transition: all 0.3s;
+
+    &:hover {
+        color: #8E7754;
+    }
 }
 
 /* ================= Header ================= */
