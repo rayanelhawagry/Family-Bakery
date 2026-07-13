@@ -109,6 +109,7 @@ a {
 }
 
 .header .content p {
+    margin: 15px 0px;
     color: rgba(255, 255, 255, 0.92);
     font-size: 1.5rem;
     font-weight: 400;
@@ -117,8 +118,31 @@ a {
 .header .content button {
     margin-top: 10px;
     margin-right: 10px;
-    padding: 15px;
+    padding: 20px;
+    border-radius: 5px;
     font-size: 1.2rem;
     cursor: pointer;
-    background-color: #8A6A4E;
+}
+
+.header .content button.learn-btn {
+    color: white;
+    background-color: #8E7754;
+    transition: all 0.3s;
+
+    &:hover {
+        color: black;
+        background-color: white;
+    }
+}
+
+.header .content button.contact-btn {
+    color: white;
+    background-color: transparent;
+    border: 2px solid white;
+    transition: all 0.3s;
+
+    &:hover {
+        color: black;
+        background-color: white;
+    }
 }
