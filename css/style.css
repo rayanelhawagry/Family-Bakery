@@ -42,7 +42,8 @@ a {
 /* ================= Navbar ================= */
 .navbar {
     padding: 0.313rem;
-    background-color: transparent;
+    /* edit background-color later... */
+    background-color: black;
     position: fixed;
     top: 0;
     left: 0;
@@ -154,4 +155,28 @@ a {
         color: black;
         background-color: white;
     }
+}
+
+/* ================= About ================= */
+.about {
+    background-color: teal;
+    overflow: auto;
+}
+
+.about .container {
+    background-color: chartreuse;
+    margin-top: 6.25rem;
+    margin-bottom: 6.25rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about .container .img-section {
+    width: 47%;
+}
+
+.about .container .details-section {
+    width: 50%;
 }
