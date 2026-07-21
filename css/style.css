@@ -159,18 +159,21 @@ a {
 
 /* ================= About ================= */
 .about {
-    background-color: teal;
+    /* background-color: teal; */
     overflow: auto;
 }
 
+.about::selection {
+    color: black;
+}
+
 .about .container {
-    background-color: chartreuse;
+    /* background-color: chartreuse; */
     margin-top: 6.25rem;
     margin-bottom: 6.25rem;
 
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 
 .about .container .img-section {
@@ -178,5 +181,42 @@ a {
 }
 
 .about .container .details-section {
-    width: 50%;
+    width: 48%;
+    padding: 30px 2px;
+}
+
+.details-section h2 {
+    margin: 30px 0px;
+    color: #303030;
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.details-section p {
+    color: #686868;
+    line-height: 28px;
+    /* font-size: 17px; */
+    font-weight: 400;
+}
+
+/* .details-section ul {
+    margin-top: 30px;
+} */
+
+.details-section ul li {
+    margin: 20px 0px;
+    padding: 10px;
+}
+
+.details-section ul li i {
+    /* padding: 15px; */
+    color: #8E7754;
+    /* border: 1px solid black; */
+    /* border-radius: 50% 50% 50% 50%; */
+}
+
+.details-section ul li span {
+    color: #686868;
+    font-size: 17px;
+    font-weight: 400;
 }
