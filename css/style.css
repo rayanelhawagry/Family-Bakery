@@ -185,14 +185,14 @@ a {
     padding: 30px 2px;
 }
 
-.details-section h2 {
+.about .container .details-section h2 {
     margin: 30px 0px;
     color: #303030;
     font-size: 32px;
     font-weight: 400;
 }
 
-.details-section p {
+.about .container .details-section p {
     color: #686868;
     line-height: 28px;
     /* font-size: 17px; */
@@ -203,20 +203,62 @@ a {
     margin-top: 30px;
 } */
 
-.details-section ul li {
+.about .container .details-section ul li {
     margin: 20px 0px;
     padding: 10px;
 }
 
-.details-section ul li i {
+.about .container .details-section ul li i {
     /* padding: 15px; */
     color: #8E7754;
     /* border: 1px solid black; */
     /* border-radius: 50% 50% 50% 50%; */
 }
 
-.details-section ul li span {
+.about .container .details-section ul li span {
     color: #686868;
     font-size: 17px;
+    font-weight: 400;
+}
+
+/* ================= Our Location ================= */
+.location {
+    background-color: #F8F8F8;
+    overflow: auto;
+}
+
+.location::selection {
+    color: black;
+}
+
+.location .container {
+    margin-top: 6.25rem;
+    margin-bottom: 6.25rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.location .container .details-section {
+    width: 48%;
+}
+
+.location .container .img-section {
+    width: 47%;
+}
+
+.location .container .details-section h2 {
+    color: #303030;
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.location .container .details-section p {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: #686868;
+    line-height: 28px;
+    /* font-size: 17px; */
     font-weight: 400;
 }
