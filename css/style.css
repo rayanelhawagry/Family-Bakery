@@ -264,3 +264,65 @@ a {
 }
 
 /* ================= Our Baking ================= */
+.baking {
+    overflow: auto;
+}
+
+.baking::selection {
+    color: black;
+}
+
+.baking .container {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.baking .container .title {
+    text-align: center;
+}
+
+.baking .container .title h3 {
+    color: #303030;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.baking .container .title p {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: #888888;
+    /* font-size: 17px; */
+    font-weight: 400;
+}
+
+.baking .container .baking-cards {
+    margin-top: 3.5rem;
+    display: flex;
+    gap: 2.5rem;
+}
+
+.baking-cards .outer {
+    /* padding-inline: 20px; */
+    width: 33.333333%;
+}
+
+.baking-cards .outer .inner .details {
+    text-align: center;
+}
+
+.baking-cards .outer .inner .details h4 {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: #303030;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.baking-cards .outer .inner .details p {
+    color: #686868;
+    /* font-size: 17px; */
+    font-weight: 400;
+    line-height: 28px;
+}
+
+/* ================= Contact Information ================= */
