@@ -420,3 +420,111 @@ a {
 }
 
 /* ================= Footer ================= */
+.footer::selection {
+    color: black;
+}
+
+.footer .top {
+    background-color: #403D38;
+    overflow: auto;
+}
+
+.footer .top .container {
+    margin-top: 3.5rem;
+    margin-bottom: 3.5rem;
+
+    display: flex;
+    gap: 2rem;
+}
+
+.footer .top .container .outer {
+    width: 25%;
+    /* padding-inline: 10px; */
+}
+
+.footer .top .container .outer .inner h4 {
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.footer .top .container .outer .inner p,
+.footer .top .container .outer .inner li,
+.footer .top .container .outer .inner span,
+.footer .top .container .outer .inner a {
+    color: #969696;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.footer .top .container .outer .inner p {
+    margin-top: 1rem;
+    line-height: 28px;
+}
+
+.footer .top .container .outer .inner ul,
+.footer .top .container .contact-details .inner ul {
+    margin-top: 1rem;
+}
+
+.footer .top .container .outer .inner ul .all,
+.footer .top .container .contact-details .inner ul .all {
+    /* margin-bottom: 2rem; */
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #96969631;
+}
+
+.footer .top .container .contact-details .inner ul .first {
+    text-align: center;
+}
+
+.footer .top .container .outer .inner ul .last,
+.footer .top .container .contact-details .inner ul .last {
+    padding-top: 15px;
+}
+
+.footer .top .container .outer .inner ul li .icon {
+    width: 1rem;
+    height: 1rem;
+
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.footer .top .container .contact-details .inner ul li .icon {
+    width: 1.8rem;
+    height: 1.8rem;
+
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.footer .top .container .contact-details .inner ul span a {
+    transition: 0.3s all;
+}
+
+.footer .top .container .contact-details .inner ul span a:hover {
+    color: #FFFFFF;
+}
+
+.footer .top .container .contact-details .inner {
+    position: relative;
+    isolation: isolate;
+}
+
+.footer .top .container .contact-details .inner::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url(../images/contact-details-map.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.2;
+    z-index: -1;
+}
+
+.footer .bottom {
+    background-color: #353330;
+}
