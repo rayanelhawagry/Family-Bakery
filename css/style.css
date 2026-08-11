@@ -12,11 +12,17 @@
     background-color: #8E7754;
 }
 
+.about::selection,
+.location::selection,
+.baking::selection,
+.contact-info::selection,
+.footer::selection {
+    color: black;
+}
+
 body {
     font-family: "Alegreya", serif;
     font-optical-sizing: auto;
-    /* font-weight: <weight>;
-    font-style: normal; */
 }
 
 img {
@@ -42,7 +48,6 @@ a {
 /* ================= Navbar ================= */
 .navbar {
     padding: 0.313rem;
-    /* edit background-color later... */
     background-color: black;
     position: fixed;
     top: 0;
@@ -58,8 +63,7 @@ a {
 }
 
 .navbar .container .logo {
-    /* width: 11.25rem; */
-    width: 15%;
+    width: 11.188rem;
 }
 
 .navbar .container .links {
@@ -67,10 +71,10 @@ a {
 }
 
 .navbar .container .links ul {
+    font-size: 1.375rem;
     display: flex;
     justify-content: flex-end;
     gap: 2.5rem;
-    font-size: 1.375rem;
 }
 
 .navbar .container .links ul li a {
@@ -107,8 +111,8 @@ a {
 
 .header .content {
     width: 55%;
-    text-align: center;
     color: white;
+    text-align: center;
     font-size: 1.5rem;
     z-index: 2;
 }
@@ -119,16 +123,16 @@ a {
 }
 
 .header .content p {
-    margin: 15px 0px;
+    margin: 0.938rem 0px;
     color: rgba(255, 255, 255, 0.92);
     font-size: 1.5rem;
     font-weight: 400;
 }
 
 .header .content button {
-    margin-top: 10px;
-    margin-right: 10px;
-    padding: 20px;
+    margin-top: 0.625rem;
+    margin-right: 0.625rem;
+    padding: 1.25rem;
     border-radius: 5px;
     font-size: 1.2rem;
     cursor: pointer;
@@ -159,16 +163,10 @@ a {
 
 /* ================= About ================= */
 .about {
-    /* background-color: teal; */
     overflow: auto;
 }
 
-.about::selection {
-    color: black;
-}
-
 .about .container {
-    /* background-color: chartreuse; */
     margin-top: 6.25rem;
     margin-bottom: 6.25rem;
 
@@ -182,30 +180,25 @@ a {
 
 .about .container .details-section {
     width: 48%;
-    padding: 30px 2px;
+    padding: 1.875rem 0.125rem;
 }
 
 .about .container .details-section h2 {
-    margin: 30px 0px;
+    margin: 1.875rem 0px;
     color: #303030;
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 400;
 }
 
 .about .container .details-section p {
     color: #686868;
-    line-height: 28px;
-    /* font-size: 17px; */
+    line-height: 1.75;
     font-weight: 400;
 }
 
-/* .details-section ul {
-    margin-top: 30px;
-} */
-
 .about .container .details-section ul li {
-    margin: 5px 0px;
-    padding: 10px 0px;
+    margin: 0.313rem 0px;
+    padding: 0.625rem 0px;
     display: flex;
     align-items: center;
 }
@@ -218,16 +211,14 @@ a {
 }
 
 .about .container .details-section ul li img {
-    /* padding: 15px; */
-    /* color: #8E7754; */
     border: 1px solid #E0E0E0;
     border-radius: 50% 50% 50% 50%;
 }
 
 .about .container .details-section ul li span {
-    margin-inline: 8px;
+    margin-inline: 0.5rem;
     color: #686868;
-    font-size: 17px;
+    font-size: 1.063rem;
     font-weight: 400;
 }
 
@@ -235,10 +226,6 @@ a {
 .location {
     background-color: #F8F8F8;
     overflow: auto;
-}
-
-.location::selection {
-    color: black;
 }
 
 .location .container {
@@ -260,7 +247,7 @@ a {
 
 .location .container .details-section h2 {
     color: #303030;
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 400;
 }
 
@@ -268,18 +255,13 @@ a {
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
     color: #686868;
-    line-height: 28px;
-    /* font-size: 17px; */
+    line-height: 1.75;
     font-weight: 400;
 }
 
 /* ================= Our Baking ================= */
 .baking {
     overflow: auto;
-}
-
-.baking::selection {
-    color: black;
 }
 
 .baking .container {
@@ -293,7 +275,7 @@ a {
 
 .baking .container .title h3 {
     color: #303030;
-    font-size: 30px;
+    font-size: 1.875rem;
     font-weight: 400;
 }
 
@@ -301,7 +283,6 @@ a {
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
     color: #888888;
-    /* font-size: 17px; */
     font-weight: 400;
 }
 
@@ -312,7 +293,6 @@ a {
 }
 
 .baking-cards .outer {
-    /* padding-inline: 20px; */
     width: 33.333333%;
 }
 
@@ -324,25 +304,20 @@ a {
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
     color: #303030;
-    font-size: 22px;
+    font-size: 1.375rem;
     font-weight: 400;
 }
 
 .baking-cards .outer .inner .details p {
     color: #686868;
-    /* font-size: 17px; */
     font-weight: 400;
-    line-height: 28px;
+    line-height: 1.75;
 }
 
 /* ================= Contact Information ================= */
 .contact-info {
     background-color: #F8F8F8;
     overflow: auto;
-}
-
-.contact-info::selection {
-    color: black;
 }
 
 .contact-info .container {
@@ -362,26 +337,25 @@ a {
 }
 
 .contact-info .container .details-section h2 {
-    margin: 30px 0px;
+    margin: 1.875rem 0px;
     color: #303030;
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 400;
 }
 
 .contact-info .container .details-section p {
     color: #686868;
-    line-height: 28px;
-    /* font-size: 17px; */
+    line-height: 1.75;
     font-weight: 400;
 }
 
 .contact-info .container .details-section .contact-details {
-    margin: 32px 0px;
+    margin: 2rem 0px;
 }
 
 .contact-info .container .details-section ul li {
-    margin: 5px 0px;
-    padding: 10px 0px;
+    margin: 0.313rem 0px;
+    padding: 0.625rem 0px;
     display: flex;
     align-items: center;
 }
@@ -395,35 +369,26 @@ a {
 }
 
 .contact-info .container .details-section ul li img {
-    /* padding: 15px; */
     color: #8E7754;
-    /* border: 1px solid black; */
-    /* border-radius: 50% 50% 50% 50%; */
-    /* padding: 15px; */
-    /* color: #8E7754; */
     background-color: #8E7754;
     border: 1px solid #E0E0E0;
     border-radius: 50% 50% 50% 50%;
 }
 
 .contact-info .container .details-section ul li span {
-    margin-inline: 8px;
+    margin-inline: 0.5rem;
     color: #686868;
-    font-size: 17px;
+    font-size: 1.063rem;
     font-weight: 400;
 }
 
 .contact-info .container .location-section iframe {
     width: 100%;
-    height: 520px;
+    height: 32.5rem;
     display: block;
 }
 
 /* ================= Footer ================= */
-.footer::selection {
-    color: black;
-}
-
 .footer .top {
     background-color: #403D38;
     overflow: auto;
@@ -439,12 +404,11 @@ a {
 
 .footer .top .container .outer {
     width: 25%;
-    /* padding-inline: 10px; */
 }
 
 .footer .top .container .outer .inner h4 {
     color: #FFFFFF;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 400;
 }
 
@@ -453,13 +417,13 @@ a {
 .footer .top .container .outer .inner span,
 .footer .top .container .outer .inner a {
     color: #969696;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
 }
 
 .footer .top .container .outer .inner p {
     margin-top: 1rem;
-    line-height: 28px;
+    line-height: 1.75;
 }
 
 .footer .top .container .outer .inner ul,
@@ -469,19 +433,14 @@ a {
 
 .footer .top .container .outer .inner ul .all,
 .footer .top .container .contact-details .inner ul .all {
-    /* margin-bottom: 2rem; */
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 0.938rem;
+    padding-bottom: 0.938rem;
     border-bottom: 1px solid #96969631;
-}
-
-.footer .top .container .contact-details .inner ul .first {
-    text-align: center;
 }
 
 .footer .top .container .outer .inner ul .last,
 .footer .top .container .contact-details .inner ul .last {
-    padding-top: 15px;
+    padding-top: 0.938rem;
 }
 
 .footer .top .container .outer .inner ul li .icon {
@@ -502,10 +461,10 @@ a {
 
 .footer .top .container .contact-details .inner ul span a {
     transition: 0.3s all;
-}
 
-.footer .top .container .contact-details .inner ul span a:hover {
-    color: #FFFFFF;
+    &:hover {
+        color: #FFFFFF;
+    }
 }
 
 .footer .top .container .contact-details .inner {
@@ -519,8 +478,8 @@ a {
     inset: 0;
     background-image: url(../images/contact-details-map.png);
     background-size: contain;
-    background-position: center;
     background-repeat: no-repeat;
+    background-position: center;
     opacity: 0.2;
     z-index: -1;
 }
@@ -547,18 +506,18 @@ a {
 
 .footer .bottom .container p {
     margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
     color: #777777;
-    font-size: 15px;
+    font-size: 0.938rem;
     font-weight: 400;
 }
 
 .footer .bottom .container .social-icons a {
-    margin-inline: 5px;
-    padding: 10px;
+    margin-inline: 0.313rem;
+    padding: 0.525rem;
     color: #777777;
     background-color: #5e5a55a9;
-    border-radius: 50% 50%;
+    border-radius: 50% 50% 50% 50%;
     transition: 0.3s all;
 
     &:hover.facebook {
@@ -586,3 +545,5 @@ a {
     width: 1.25rem;
     height: 1.25rem;
 }
+
+/* =========================================================== */
