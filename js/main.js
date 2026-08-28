@@ -24,7 +24,11 @@ function navbarStylesWhenScroll() {
 
 // windowScroll = 0
 function navbarStylesWhenZero() {
-    navbar.style.cssText = 'background-color: transparent; box-shadow: none';
+    navbar.style.cssText = `
+    background-color: transparent;
+    box-shadow: none;
+    padding-top: 1rem;
+    padding-bottom: 1rem;`;
     logo.src = './images/bakery-logo (light).png';
     navLinks.forEach((link) => {
         link.style.cssText = 'color: white';
