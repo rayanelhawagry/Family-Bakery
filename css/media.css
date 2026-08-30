@@ -7,19 +7,19 @@
 /* SM ==> Small Devices (Smartphones) */
 @media all and (width < 768px) {
 
-    /* ================= About ================= */
-    .about .container {
+    /* ================= About, Our Location ================= */
+    .about .container,
+    .location .container {
         margin-top: 4.25rem;
         margin-bottom: 4.25rem;
 
         flex-direction: column;
     }
 
-    .about .container .img-section {
-        width: 100%;
-    }
-
-    .about .container .details-section {
+    .about .container .img-section,
+    .about .container .details-section,
+    .location .container .details-section,
+    .location .container .img-section {
         width: 100%;
     }
 }
