@@ -8,7 +8,8 @@
 @media all and (width < 768px) {
 
     .about .container,
-    .location .container {
+    .location .container,
+    .contact-info .container {
         margin-top: 4.25rem;
         margin-bottom: 4.25rem;
 
@@ -19,11 +20,17 @@
         flex-direction: column;
     }
 
+    .contact-info .container {
+        gap: 4rem;
+    }
+
     .about .container .img-section,
     .about .container .details-section,
     .location .container .details-section,
     .location .container .img-section,
-    .baking-cards .outer {
+    .baking-cards .outer,
+    .contact-info .container .details-section,
+    .contact-info .container .location-section {
         width: 100%;
     }
 }
