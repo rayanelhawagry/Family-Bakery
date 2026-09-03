@@ -7,7 +7,6 @@
 /* SM ==> Small Devices (Smartphones) */
 @media all and (width < 768px) {
 
-    /* ================= About, Our Location ================= */
     .about .container,
     .location .container {
         margin-top: 4.25rem;
@@ -16,10 +15,15 @@
         flex-direction: column;
     }
 
+    .baking .container .baking-cards {
+        flex-direction: column;
+    }
+
     .about .container .img-section,
     .about .container .details-section,
     .location .container .details-section,
-    .location .container .img-section {
+    .location .container .img-section,
+    .baking-cards .outer {
         width: 100%;
     }
 }
