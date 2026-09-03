@@ -1,10 +1,3 @@
-/* XS ==> Extra Small Devices (Smart Watches & Small Phones) */
-/* @media all and (width < 640px) {
-    
-} */
-
-
-/* SM ==> Small Devices (Smartphones) */
 @media all and (width < 768px) {
 
     .about .container,
@@ -24,29 +17,29 @@
         gap: 4rem;
     }
 
+    .footer .top .container {
+        flex-wrap: wrap;
+    }
+
     .about .container .img-section,
     .about .container .details-section,
     .location .container .details-section,
     .location .container .img-section,
     .baking-cards .outer,
     .contact-info .container .details-section,
-    .contact-info .container .location-section {
+    .contact-info .container .location-section,
+    .footer .top .container .outer {
         width: 100%;
     }
 }
 
 
-/* MD ==> Medium Devices (Tablets & Small Laptops) */
-@media all and (768px <=width < 1024px) {}
+@media all and (768px <=width <992px) {
+    .footer .top .container {
+        flex-wrap: wrap;
+    }
 
-
-/* LG ==> Large Devices (Standard Laptops & Landscape Tablets) */
-@media all and (1024px <=width < 1280px) {}
-
-
-/* XL ==> Extra Large Devices (Large Laptops & Desktops) */
-@media all and (1280px <=width < 1536px) {}
-
-
-/* XXL ==> Extra Extra Large Devices (Large Screens, Smart TVs & Ultra-wide) */
-@media all and (1536px <=width) {}
+    .footer .top .container .outer {
+        width: 45%;
+    }
+}
